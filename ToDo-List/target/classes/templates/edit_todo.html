@@ -9,15 +9,15 @@
 <div align="center">
 		<h1>Editing Todo item</h1>
 		<!-- connects with /add url mapping-->
-		<!-- phone object is passed from controller from method-->
-		<!-- we use {/add} to save the edited student back to the database -->
+		<!-- todo object is passed from controller from method-->
+		<!-- we use {/add} to save the edited todo back to the database -->
 
 		<form action="#" th:action="@{/add}" th:object="${todoItem}" method="post">
 
 			<table>
 
 				<tr>
-					<!-- need this to edit phone without making new object of student -->
+					<!-- need this to edit todo without making new object of todo -->
 					<!-- we make this read only so we cant edit this field-->
 					<td>Id:</td>
 					<td><input type="number" th:field="*{id}" readonly="readonly" /> </td>
