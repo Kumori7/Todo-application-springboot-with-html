@@ -22,5 +22,11 @@ uses basic html for front-end with html files stored in the templates folder in 
 
 ![image](https://user-images.githubusercontent.com/73298685/184608877-9eaf5348-c9fe-40ec-845e-deb0413b9149.png)
 
+                                          edit todo page
 
+![image](https://user-images.githubusercontent.com/73298685/184609476-0a61dad2-8111-4850-848e-15b78d21f21a.png)
+
+
+                                      populated Todo List
+![image](https://user-images.githubusercontent.com/73298685/184609700-345deb73-440d-4fe1-8136-5a37dd8d7530.png)
 
