@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div align="center">
+		<h1>Editing Todo item</h1>
+		<!-- connects with /add url mapping-->
+		<!-- phone object is passed from controller from method-->
+		<!-- we use {/add} to save the edited student back to the database -->
+
+		<form action="#" th:action="@{/add}" th:object="${todoItem}" method="post">
+
+			<table>
+
+				<tr>
+					<!-- need this to edit phone without making new object of student -->
+					<!-- we make this read only so we cant edit this field-->
+					<td>Id:</td>
+					<td><input type="number" th:field="*{id}" readonly="readonly" /> </td>
+				</tr>
+
+				<tr>
+					<td>Description:</td>
+					<td><input type="text" th:field="*{description}" /> </td>
+				</tr>
+
+				<tr>
+					<td>Category:</td>
+					<td><input type="text" th:field="*{category}" /> </td>
+				</tr>
+
+				<tr>
+					<td>Date Created:</td>
+					<td><input type="text" th:field="*{dateCreated}" readonly="readonly" /> </td>
+				</tr>
+
+
+				<tr>
+					<td>Status:</td>
+					<td><input type="text" th:field="*{taskStatus}" /> </td>
+				</tr>
+
+				<!-- button logic-->
+				<tr colspan="2"> <button type="submit">Update</button> </tr>
+			</table>
+
+		</form>
+	</div>
+
+
+</body>
+</html>

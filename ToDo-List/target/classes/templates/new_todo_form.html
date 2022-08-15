@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+</head>
+
+<body>
+
+	<h1> new Todo form </h1>
+
+	<form action="#" th:action="@{/add}" th:object="${todo}" method="post">
+
+		<table>
+
+			<tr>
+				<td>Description:</td>
+				<td><input type="text" th:field="*{description}" /> </td>
+			</tr>
+
+			<tr>
+				<td>Category:</td>
+				<td><input type="text" th:field="*{category}" /> </td>
+			</tr>
+
+			<tr>
+				<td>Status:</td>
+				<td><input type="boolean" th:field="*{taskStatus}" /> </td>
+			</tr>
+
+
+			<!-- button logic-->
+			<tr colspan="2"> <button type="submit">Save</button> </tr>
+		</table>
+		
+			</form>
+		
+
+</body>
+
+</html>
