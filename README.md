@@ -31,7 +31,7 @@ uses basic html for front-end with html files stored in the templates folder in 
 ![image](https://user-images.githubusercontent.com/73298685/184609700-345deb73-440d-4fe1-8136-5a37dd8d7530.png)
 
 
-                                     deleting 
+                                     deleting "clean the office " todo request
 
 ![image](https://user-images.githubusercontent.com/73298685/184610708-e3fde6c9-ec01-4a08-b3ec-f3c0f185c083.png)
 
